@@ -3,49 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        .main-content {
-            margin: 20px 0;
-        }
-    </style>
+    <title>Saurav Kumar's Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>Welcome to My Portfolio</h1>
+        <h1>Saurav Kumar's Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#data-engineer">Data Engineer</a>
+            <a href="#integration-engineer">Integration Engineer</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
+
     <div class="container">
-        <div class="main-content">
+        <!-- About Section -->
+        <section id="about" class="main-content">
             <h2>About Me</h2>
-            <p>Seasoned Data Engineer with hands-on experience in Azure services like Azure Data Factory (ADF), Azure Databricks, Azure Synapse Analytics, Azure Function App, SQL, Python, and Spark. 
-                I specialize in designing, implementing, and optimizing data solutions on the Azure platform, leveraging these tools to create scalable and efficient data pipelines,
-                 perform data transformations, and drive valuable insights from data.</p>
-            <h2>Projects</h2>
+            <p>Hello! I am Saurav Kumar, a versatile professional with expertise in both Data Engineering and Integration Engineering. I specialize in Azure services and have extensive experience in creating scalable, secure, and efficient solutions on the Azure platform.</p>
+        </section>
+
+        <!-- Data Engineer Section -->
+        <section id="data-engineer" class="main-content">
+            <h2>Data Engineer</h2>
+            <p>Seasoned Data Engineer with hands-on experience in Azure services like Azure Data Factory (ADF), Azure Databricks, Azure Synapse Analytics, Azure Function App, SQL, Python, and Spark. I specialize in designing, implementing, and optimizing data solutions on the Azure platform.</p>
+            <h3>Key Skills</h3>
             <ul>
-                <li>Project 1: Description of your project.</li>
-                <li>Project 2: Description of your project.</li>
+                <li>Azure Synapse Workspace</li>
+                <li>Azure Data Factory</li>
+                <li>Azure Databricks</li>
+                <li>Azure Function App</li>
+                <li>Logic Apps</li>
+                <li>Python, SQL Server, Stored Procedures</li>
+                <li>Hadoop, Hive, Spark</li>
             </ul>
+            <h3>Projects</h3>
+            <ul>
+                <li><strong>Project 1:</strong> Integrated data engineering solutions using Azure Synapse data warehouses.</li>
+                <li><strong>Project 2:</strong> Developed advanced parameterized stored procedures on SQL Server for efficient data processing.</li>
+            </ul>
+        </section>
+
+        <!-- Integration Engineer Section -->
+        <section id="integration-engineer" class="main-content">
+            <h2>Integration Engineer</h2>
+            <p>As an Integration Engineer in Azure, I specialize in services like Azure Logic Apps, Azure Service Bus, Azure Function App, and more. My skills include working with XML/XSLT/XSD, JSON, and Tibco BW for seamless data integration.</p>
+            <h3>Key Skills</h3>
+            <ul>
+                <li>Azure Logic Apps</li>
+                <li>Azure Service Bus</li>
+                <li>Azure Function App</li>
+                <li>XML/XSLT/XSD, JSON</li>
+                <li>Tibco BW, APIM, Azure Key Vault</li>
+                <li>Azure Storage, Application Insights</li>
+            </ul>
+            <h3>Projects</h3>
+            <ul>
+                <li><strong>Project 1:</strong> Developed and deployed Azure Logic Apps to automate workflows and integrate diverse systems.</li>
+                <li><strong>Project 2:</strong> Managed message brokering and system communication using Azure Service Bus for reliable data exchange.</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="main-content">
             <h2>Contact</h2>
-            <p>Email: youremail@example.com</p>
-        </div>
+            <p>Email: <a href="mailto:sauravkumarrajjoli@gmail.com">sauravkumarrajjoli@gmail.com</a></p>
+            <p>Location: Lucknow, Uttar Pradesh, India</p>
+            <p>Phone: +91 7766074592</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/saurav-kumar-3197a1a5/" target="_blank">Saurav Kumar</a></p>
+        </section>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Saurav Kumar. All rights reserved.</p>
+    </footer>
 </body>
 </html>
