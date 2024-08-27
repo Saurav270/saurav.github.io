@@ -1,3 +1,15 @@
+.icon-label {
+	margin-top: 5px; /* Adds space between the icon and the label */
+	font-size: 14px; /* Font size for the label */
+	font-weight: bold; /* Makes the label text bold */
+	color: var(--label-color, #000); /* Default to black text */
+	text-align: center; /* Center-aligns the text */
+	transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+body.dark-mode .icon-label {
+	color: var(--label-color-dark, #fff); /* Changes text color to white in dark mode */
+}
 
 .open
 {
