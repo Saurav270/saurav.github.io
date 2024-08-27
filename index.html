@@ -183,11 +183,11 @@
 							</div>
 						</div>
 						<div class="timeline-wrapper">
-							<div class="timeline-yr"> <span>2022</span> </div>
+							<div class="timeline-yr"> <span>2021</span> </div>
 							<div class="timeline-info">
-								<h3><span>Full Time</span><small>5 months</small></h3>
+								<h3><span>Full Time</span><small>11 months</small></h3>
 								<p>Data Analyst at <a target="about:blank" rel="noreferrer noopener" href="https://juppiterailabs.com/">JUPITTER AI Labs</a>.
-									<br> Feb 2022 - June 2022
+									<br> June 2021 - May 2022
 								</p>
 							</div>
 						</div>
@@ -224,24 +224,28 @@
 					<h2 class="mb-4 mobile-mt-2">Educations</h2>
 					<div class="timeline">
 						<div class="timeline-wrapper">
-							<div class="timeline-yr"> <span>2022</span> </div>
+							<div class="timeline-yr"> <span>2021</span> </div>
 							<div class="timeline-info">
-								<h3><span>B.Tech</span><small>FIEM</small></h3>
-								<p>Graduated from <a target="about:blank" rel="noreferrer noopener" href="http://makautexam.net/">MAKAUT</a> university. <a target="about:blank" rel="noreferrer noopener" href="http://futureeducation.in/fiem/">KHOW MORE ABOUT FIEM</a></p>
+								<h3><span>B.Tech</span><small></small></h3>
+								<h3><span></span><small>Sam Higginbottom University </small></h3>
+
+								<!-- <p>Graduated from <a target="about:blank" rel="noreferrer noopener">SHUATS</a></p> -->
 							</div>
 						</div>
 						<div class="timeline-wrapper">
-							<div class="timeline-yr"> <span>2018</span> </div>
+							<div class="timeline-yr"> <span>2015</span> </div>
 							<div class="timeline-info">
-								<h3><span>Higher Secondary</span><small>Radha Madhab Institution</small></h3>
-								<p>Completed my higher secondary in 2018 from <a target="about:blank" rel="noreferrer noopener" href="https://wbchse.nic.in/">WBCHSE</a> board..</p>
+								<h3><span>Higher Secondary</span><small>Guru Gobind Singh Public School Bokaro </small></h3>
+								<!-- <p>Completed my higher secondary in 2015 from <a target="about:blank" rel="noreferrer noopener" href="https://wbchse.nic.in/">WBCHSE</a> board..</p> -->
 							</div>
 						</div>
 						<div class="timeline-wrapper">
-							<div class="timeline-yr"> <span>2016</span> </div>
+							<div class="timeline-yr"> <span>2013</span> </div>
 							<div class="timeline-info">
-								<h3><span>Secondary</span><small>Radha Madhab Institution</small></h3>
-								<p>Completed my secondary in 2016 from <a target="about:blank" rel="noreferrer noopener" href="https://wbbse.wb.gov.in/">WBBSE</a> board.</p>
+								<h3><span>Secondary</span>
+									<br>
+									<small>Sarswati Vidya Mandir Aurangabad</small></h3>
+								<!-- <p>Completed my secondary in 2016 from <a target="about:blank" rel="noreferrer noopener" href="https://wbbse.wb.gov.in/">WBBSE</a> board.</p> -->
 							</div>
 						</div>
 					</div>
@@ -641,6 +645,25 @@
 	});
 	</script>
 </body>
+
+
+<script>
+    function calculateDuration(startDate, endDate) {
+        const start = new Date(startDate);
+        const end = new Date(endDate);
+        const diffInMs = end - start;
+        const diffInDays = diffInMs / (1000 * 60 * 60 * 24);
+        const years = diffInDays / 365;
+        return years.toFixed(1); // Returns years with one decimal place
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const startDate = '2022-05-01'; // Start date for Data Engineer role
+        const endDate = new Date().toISOString().split('T')[0]; // Current date in YYYY-MM-DD format
+        const duration = calculateDuration(startDate, endDate);
+        document.querySelector('#date_difference_small').textContent = duration;
+    });
+</script>
 
 
 <!-- Mirrored from heyatanu.github.io/me/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 26 Aug 2024 05:27:22 GMT -->
